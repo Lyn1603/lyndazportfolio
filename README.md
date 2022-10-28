@@ -22,6 +22,6 @@ After this, i wanted to share my work on discord so i use zapier to connect my g
 # There is my explication of how i deploy my portfolio i hoped that you find this readme interesting and understanding, thank you !! 
 
 More informations about my course :
-https://www.loom.com/share/8b11d9f175a04d1ba66be7ae0e1a6a5c
+https://www.loom.com/share/490271049a6b4c77ac26339c21370604
 https://zapier.com/shared/dd32116689646e1cec9b92d98b623d123b936a6a
-portfolio-lyn1603.vercel.app
+
