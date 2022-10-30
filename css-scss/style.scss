@@ -31,7 +31,10 @@
   }
 
    
-
+  a{
+    text-decoration: none;
+    color: black;
+  }
 
 
   section{
@@ -44,6 +47,11 @@
 
   }
 
+  span{
+    color: black;
+  }
+
+/* Animation boutons bleu */
 
   .button /* Tout d'abord, on initialise le button*/ {
     cursor: pointer;
@@ -78,7 +86,7 @@
 
 }
  
-
+/* Fin Animation boutons bleu */
 
 
   /* ==========================================================================
@@ -117,9 +125,6 @@ div:nth-of-type(5){
 @import url(../css-scss/composants/modal-hobbies.css);
 @import url(../css-scss/composants/modal-contacts.css);
 
-
-  
-
   /* ==========================================================================
     TASKBAR
 ========================================================================== */
@@ -149,52 +154,82 @@ div:nth-of-type(5){
 
 } 
 
-
-
-
   /* ==========================================================================
    BUTTON
 ========================================================================== */
 
-.start-windows98{
-  padding-top: 5px;
-  right: 20px;
-  width: 27%;
-  
+@import url(../css-scss/composants/modal-startbutton.css);
+
+  /* ==========================================================================
+   HORLOGE
+========================================================================== */
+#time{
+  font-size: 30px;
 }
-.start-button /* Tout d'abord, on initialise le button*/ {
-  cursor: pointer;
-  border: 0px;
-  background:transparent;
-  position: relative;
-  transition: all .2s;
-  overflow: hidden;
-  border-radius: 2px;
-  width: 20%;
-  bottom: 20%;
-  right: 110px;
-
-}
-
-.start-button:hover /* la pseudo classe hover permet de spécifier l'apparence que va prendre un élément au survol de celle-ci*/ {
-    box-shadow: 10px 10px 25px 0px rgba(87, 84, 91, 0.25), -10px 10px 25px 0prgba(103, 120, 125, 0.25)5;
-    transform: translate(0,-3px);
-
-}
-
-
-.start-button::after /* la pseudo classe after permet d'excuter les derniers éléments qui ont était selectionnés*/ {
-  content: '';
-  position: absolute;
-  top: -50px;
-  left: -100px;
-  z-index: -1;
-  transition: all .5s;
-  box-shadow: inset -10px -10px 25px 0px rgba(129, 118, 143, 0.25), -10px 10px 25px 0prgba(103, 120, 125, 0.25)5;
-
-}
-
   /* ==========================================================================
    RESPONSIVE
 ========================================================================== */
 
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+
+  body{
+    text-align: center;
+  }
+
+  img{
+    width: 110%;
+  }
+
+  section{
+    padding-top: 150px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10%;
+    grid-template-rows: 10vh 10vh 10vh 10vh 10vh;
+    
+  }
+
+
+
+  div:nth-of-type(1){
+    grid-row: 1/2;
+    grid-row: 1/2;  
+    
+  }
+  
+  div:nth-of-type(2){
+    grid-column: 7/8; 
+    grid-row: -6/-5;
+     
+  }
+  
+  div:nth-of-type(3){
+    grid-column: 4/5; 
+    grid-row: 3/4;
+  }
+  
+  div:nth-of-type(4){
+    grid-column: 7/8; 
+    grid-row: -2/-1;
+  }
+  
+  div:nth-of-type(5){
+    grid-column: 1/2; 
+    grid-row: 5/6;
+  }
+  
+  .taskbar{
+    height: 10%;
+
+    .start-windows98{
+      padding-top: 10px;
+      width: 35%;
+    }
+  }
+  #time{
+    padding-top: 20px;
+    font-size:40px;
+  }
+}

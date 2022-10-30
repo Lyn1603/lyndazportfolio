@@ -7,15 +7,13 @@
     <link rel="stylesheet" href="css-scss/style.css">
     <title>Welcome - MyPortfolio</title>
 </head>
-<body>
+<body onload=showDate();>
  
     <!-- Desktop -->
     <div class="desktop">                     
         <section>
                  <!-- Icons on the desktop -->
-                
-                   
-
+            
                 <div>
                     <img src="images/me.png" alt="" width="70px">
 
@@ -78,7 +76,7 @@
 
                <div>
 
-                <h2 >  <strong> TECH IS FOR COOL KIDS </strong> </h2> 
+                <h2 class="tech" > <strong> TECH IS FOR COOL KIDS </strong> </h2> 
                 <img src="images/computer-4.png" alt="" width="70%" color="white"> 
 
                </div>
@@ -130,6 +128,7 @@
                           <div class="popup4">
                             <h2>Let's connect : </h2>
                             <a class="close4" href="#">&times;</a>
+                            <br>
                             <div class="content4">
                            
                               <br>
@@ -150,18 +149,39 @@
     <!-- Taskbar -->
 
     <div class="taskbar">
-      <button class="start-button">
-      <img class="start-windows98" src="images/windows98-button-removebg-preview.png" alt="" srcset="" >
-      </button> 
-       <div class="hours-date">
-        <p>17:25</p>
-       </div>
+      <div class="box-startbutton">
+        <a href="#startbutton"> <img class="start-windows98" src="images/windows98-button-removebg-preview.png" alt="" srcset="" ></a>
+      </div>
+         
+      <div id="startbutton" class="overlay5">
+        <div class="statbutton">
+          <h2>You leaving , oh no , so sad (snif) but i hope you enjoyed 0this amazing website ! See you soon ! </h2>
+          <div class="contentbutton">
+            <br>
+            <br>
+            <br>
+            
+            <br>
+            <br>
+            <button class="closebutton"><a href="#">Disconnect</a></button>
+            <br>
+            <br>
+            <br>
+            <button class="closebutton"><a href="#closebutton">Go Back</a></button>
+          </div>
+        </div>
+      </div>
+
+
+
+       <!-- Date + hour -->
+       <div id="time"> </div>
+       <!-- End Date + hour --> 
     </div>
    
     <!-- End taskbar -->
 
-  <script src="js/about-me.js"></script>
-  <script src="js/skills.js"></script>
+  <script src="js/horloge.js"></script>
     
 </body>
 </html>
