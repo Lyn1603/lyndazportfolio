@@ -9,7 +9,8 @@
     margin: 0;
     padding: 0;
     overflow-y: hidden;
-    background-color: rgb(3, 131, 140);
+    background-image:url(../images/backgroundwelcome.gif);
+    background-size: cover;
   }
 
   @font-face {
@@ -26,8 +27,8 @@
 
 #Progress_Status {
     margin-top: 300px;
-    margin-left: 360px;
-    width: 50%;
+    margin-left: 145px;
+    width: 80%;
     background-color: #ddd;
     
   }
@@ -47,3 +48,36 @@
     height: 20px;
     background-color: #20b08c;
   }
+
+
+  /* ==========================================================================
+    RESPONSIVE
+========================================================================== */
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+
+  body{
+   background-size: 1500px;
+  }
+ 
+  #Progress_Status {
+    margin-top: 300px;
+    margin-left: 80px;
+    width: 80%;
+    background-color: #ddd;
+    
+  }
+
+  .click{
+    height: 10vh;
+    width: 30%;
+    margin-top: 100px;
+    margin-left: 230px;
+    box-shadow: 3px 5px rgb(84, 83, 83);
+    font-family: "Windows Regular"; 
+    font-size: 50px;
+  }
+
+ 
+
+}

@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Windows Regular";   
+}
+
+body{
+    background-image: url(../images/backgroundwelcome.gif);
+    background-size: cover;
+    text-align: center;
+}
+
+h1{
+    font-size: 100px;
+    padding-top: 40px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+
+.button /* Tout d'abord, on initialise le button*/ {
+    cursor: pointer;
+    border: 0px;
+    background:transparent;
+    position: relative;
+    transition: all .2s;
+    overflow: hidden;
+    font-size: 4rem;
+    text-decoration: none;
+    color: black;
+  
+  }
+  
+  
+  .button:hover /* la pseudo classe hover permet de spécifier l'apparence que va prendre un élément au survol de celle-ci*/ {
+    background-color: rgba(8, 8, 162, 0.586);
+    color: aliceblue;
+    border: dashed 5px rgba(194, 179, 179, 0.732);
+}
+
+
+.button::after /* la pseudo classe after permet d'excuter les derniers éléments qui ont était selectionnés*/ {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  z-index: -1;
+  transition: all .5s;
+  box-shadow: inset -10px -10px 25px 0px rgba(129, 118, 143, 0.25), -10px 10px 25px 0prgba(103, 120, 125, 0.25)5;
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+
+   body{
+    background-size: 1400px;
+    text-align: center;
+   }
+    
+}
