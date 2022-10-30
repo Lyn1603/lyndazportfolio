@@ -7,7 +7,6 @@ var an=maintenant.getFullYear();
 document.write("Today is ",jour,"/",mois,"/",an,".");
 // End For the date
 
-
 // For the clock
 function refresh(){
     var t = 1000; // rafraîchissement en millisecondes
