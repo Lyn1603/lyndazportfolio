@@ -54,25 +54,24 @@
     RESPONSIVE
 ========================================================================== */
 
-@media screen and (min-width: 600px) and (max-width: 900px) {
+@media screen and (max-width: 900px) {
 
   body{
    background-size: 1500px;
   }
  
   #Progress_Status {
-    margin-top: 300px;
-    margin-left: 80px;
-    width: 80%;
+    position: relative;
+    right: 105px;
+    width: 70%;
     background-color: #ddd;
     
   }
 
   .click{
-    height: 10vh;
-    width: 30%;
-    margin-top: 100px;
-    margin-left: 230px;
+    position: relative;
+    right: 100px;
+    width: 50%;
     box-shadow: 3px 5px rgb(84, 83, 83);
     font-family: "Windows Regular"; 
     font-size: 50px;
