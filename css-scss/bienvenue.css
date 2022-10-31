@@ -52,11 +52,15 @@ h2{
 
 }
 
-@media screen and (min-width: 600px) and (max-width: 900px) {
+@media screen and (max-width: 900px) {
 
    body{
     background-size: 1400px;
     text-align: center;
    }
     
+   a{
+    position: relative;
+    bottom: 50px;
+   }
 }

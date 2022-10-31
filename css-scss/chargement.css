@@ -62,16 +62,18 @@
  
   #Progress_Status {
     position: relative;
-    right: 105px;
+    right: 100px;
     width: 70%;
+    bottom: 90px;
     background-color: #ddd;
     
   }
 
   .click{
     position: relative;
-    right: 100px;
+    right: 85px;
     width: 50%;
+    bottom: 30px;
     box-shadow: 3px 5px rgb(84, 83, 83);
     font-family: "Windows Regular"; 
     font-size: 50px;
