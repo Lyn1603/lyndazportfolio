@@ -12,13 +12,18 @@ body{
 
 h1{
     font-size: 100px;
-    padding-top: 40px;
+    padding-top: 90px;
 }
 
 h2{
     font-size: 30px;
 }
 
+.matête{
+    position: relative;
+    width: 10%;
+    border-radius: 60%;
+}
 
 .button /* Tout d'abord, on initialise le button*/ {
     cursor: pointer;
@@ -57,10 +62,19 @@ h2{
    body{
     background-size: 1400px;
     text-align: center;
+    padding-top: 10%;
    }
     
    a{
     position: relative;
     bottom: 50px;
    }
+
+   .matête{
+    position: relative;
+    width: 45%;
+    border-radius: 60%;
+    }
+
+
 }
