@@ -14,10 +14,10 @@ function refresh(){
 }
 
 function showDate() {
-    var date1 = new Date()
-    var h = date1.getHours();
-    var m = date1.getMinutes();
-    var s = date1.getSeconds();
+    var date = new Date()
+    var h = date.getHours();
+    var m = date.getMinutes();
+    var s = date.getSeconds();
     if( h < 10 ){ h = '0' + h; }
     if( m < 10 ){ m = '0' + m; }
     if( s < 10 ){ s = '0' + s; }

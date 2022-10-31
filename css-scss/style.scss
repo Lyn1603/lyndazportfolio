@@ -19,6 +19,12 @@
     src: url("../font/Windows.ttf") format("truetype"),
            
    }
+
+   .matête{
+    position: relative;
+    width: 10%;
+    border-radius: 60%;
+}
    
   div{
     text-align: center;
@@ -39,7 +45,6 @@
 
 
   section{
-    padding-top: 150px;
     justify-content: center;
     align-items: center;
     display: grid;
@@ -178,7 +183,12 @@ div:nth-of-type(5){
     text-align: center;
   }
 
-
+  .matête{
+    position: relative;
+    top: 30px;
+    width: 25%;
+    border-radius: 60%;
+}
 
   section{
     justify-content: center;
