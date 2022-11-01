@@ -8,6 +8,7 @@
   visibility: hidden;
   opacity: 0;
   transition: 1s;
+  z-index: 2;
 }
 .overlay1:target {
   visibility: visible;
@@ -30,8 +31,8 @@
 }
 .popup2 .close2 {
   position: absolute;
-  top: 20px;
-  right: 30px;
+  top: 15px;
+  right: 20px;
   transition: all 200ms;
   font-size: 30px;
   font-weight: bold;
@@ -44,6 +45,7 @@
 .popup2 .content2 {
   max-height: 30%;
   overflow: auto;
+  
 }
 
 @media screen and (max-width: 700px){

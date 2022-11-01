@@ -34,7 +34,7 @@
   .startbutton .closebutton {
     position: absolute;
     top: 20px;
-    right: 30px;
+    right: 40px;
     transition: all 200ms;
     font-size: 30px;
     font-weight: bold;

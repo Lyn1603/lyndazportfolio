@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url(../images/backgroundwelcome.gif);
+    background-image: url(../images/backgroundwelcome0.gif);
     background-size: cover;
     text-align: center;
 }
@@ -21,7 +21,7 @@ h2{
 
 .matête{
     position: relative;
-    width: 10%;
+    width: 8%;
     border-radius: 60%;
 }
 
@@ -34,14 +34,14 @@ h2{
     overflow: hidden;
     font-size: 4rem;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
   
   }
   
   
   .button:hover /* la pseudo classe hover permet de spécifier l'apparence que va prendre un élément au survol de celle-ci*/ {
     background-color: rgba(8, 8, 162, 0.586);
-    color: aliceblue;
+    color: rgb(224, 187, 254);
     border: dashed 5px rgba(194, 179, 179, 0.732);
 }
 
@@ -60,9 +60,8 @@ h2{
 @media screen and (max-width: 900px) {
 
    body{
-    background-size: 1400px;
     text-align: center;
-    padding-top: 10%;
+    padding-top: 5px;
    }
     
    a{
@@ -72,7 +71,7 @@ h2{
 
    .matête{
     position: relative;
-    width: 45%;
+    width: 35%;
     border-radius: 60%;
     }
 

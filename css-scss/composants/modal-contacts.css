@@ -30,6 +30,7 @@
 }
 .popup4 .close4 {
   position: absolute;
+  top: 20px;
   right: 30px;
   transition: all 200ms;
   font-size: 30px;

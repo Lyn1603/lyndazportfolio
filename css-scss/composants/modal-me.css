@@ -8,6 +8,7 @@
   visibility: hidden;
   opacity: 0;
   transition: 1s;
+  z-index: 2;
 }
 .overlay:target {
   visibility: visible;
@@ -30,6 +31,7 @@
 }
 .popup .close {
   position: absolute;
+  top: 20px;
   right: 30px;
   transition: all 200ms;
   font-size: 30px;
