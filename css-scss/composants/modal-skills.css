@@ -30,9 +30,10 @@
 }
 .popup2 .close2 {
   position: absolute;
+  top: 20px;
   right: 30px;
   transition: all 200ms;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   text-decoration: none;
   color: #333;
