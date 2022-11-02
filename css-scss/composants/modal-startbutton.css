@@ -4,10 +4,11 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(133, 133, 133, 0.542);
     visibility: hidden;
     opacity: 0;
     transition: 1s;
+    z-index: 2;
   }
   .overlay5:target {
     visibility: visible;
@@ -18,7 +19,7 @@
   .startbutton {
     margin: 70px auto;
     padding: 20px;
-    background: rgb(221, 217, 217);
+    background: rgb(91, 91, 91);
     border-radius: 5px;
     width: 30%;
     position: relative;
