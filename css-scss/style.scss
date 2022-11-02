@@ -23,7 +23,7 @@
 
    .matête{
     position: relative;
-    right: 15%;
+    right: 260px;
     border-radius: 60%;
 }
    
@@ -143,7 +143,7 @@ div:nth-of-type(5){
   bottom: 0;
   height: 43px;
   width: 100%;
-  background: #c8cfd4;
+  background: #d6acf489;
   display: flex;
   z-index: 999999999;
   justify-content: space-between;
@@ -151,6 +151,9 @@ div:nth-of-type(5){
 
 } 
 
+.start-windows98{
+  width: 15%;
+}
 
 
   /* ==========================================================================
@@ -182,7 +185,7 @@ div:nth-of-type(5){
     bottom: 0;
     height: 53px;
     width: 100%;
-    background: #c8cfd4;
+    background: #d6acf48c;
     display: flex;
     z-index: 999999999;
     justify-content: space-between;
@@ -234,7 +237,9 @@ div:nth-of-type(5){
   .start-windows98{
     width: 50%;
   }
-
+  .panda{
+    width: 32%;
+  }
   #time{
     position: relative;
     font-size:40px;

@@ -27,7 +27,7 @@ body {
 }
 .matête {
   position: relative;
-  right: 15%;
+  right: 260px;
   border-radius: 60%;
 }
 
@@ -126,11 +126,15 @@ div:nth-of-type(5) {
   bottom: 0;
   height: 43px;
   width: 100%;
-  background: #c8cfd4;
+  background: rgba(214, 172, 244, 0.537254902);
   display: flex;
   z-index: 999999999;
   justify-content: space-between;
   color: rgb(28, 28, 28);
+}
+
+.start-windows98 {
+  width: 15%;
 }
 
 /* ==========================================================================
@@ -157,7 +161,7 @@ div:nth-of-type(5) {
     bottom: 0;
     height: 53px;
     width: 100%;
-    background: #c8cfd4;
+    background: rgba(214, 172, 244, 0.5490196078);
     display: flex;
     z-index: 999999999;
     justify-content: space-between;
@@ -200,6 +204,9 @@ div:nth-of-type(5) {
   }
   .start-windows98 {
     width: 50%;
+  }
+  .panda {
+    width: 32%;
   }
   #time {
     position: relative;
