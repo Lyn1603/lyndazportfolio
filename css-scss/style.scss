@@ -6,12 +6,17 @@
     font-family: "Windows Regular";
   }
   
+  h2{
+    color: white;
+  }
+
   body {
     margin: 0;
     padding: 0;
     overflow-y: hidden;
-    background-image: url(../images/backgroundwelcome.gif); 
+    background-image: url(../images/background-gif-website-0.gif); 
     background-size: cover;
+    color: white;
   }
 
   @font-face {
@@ -40,7 +45,7 @@
    
   a{
     text-decoration: none;
-    color: black;
+    color: white;
   }
 
 
@@ -55,7 +60,7 @@
   }
 
   span{
-    color: black;
+    color: rgb(255, 255, 255);
   }
 
 /* Animation boutons bleu */
@@ -70,8 +75,7 @@
     border-radius: 2px;
     font-size: 1.5rem;
     text-decoration: none;
-    color: black;
-  
+    color: white;
   }
   
   
@@ -142,11 +146,11 @@ div:nth-of-type(5){
   bottom: 0;
   height: 43px;
   width: 100%;
-  background: #d6acf489;
+  background: #8ea0f989;
   display: flex;
   z-index: 999999999;
   justify-content: space-between;
-  color: rgb(28, 28, 28);
+  color: rgb(255, 255, 255);
 
 } 
 
@@ -184,7 +188,7 @@ div:nth-of-type(5){
     bottom: 0;
     height: 53px;
     width: 100%;
-    background: #d6acf48c;
+    background: #8ea0f989;
     display: flex;
     z-index: 999999999;
     justify-content: space-between;

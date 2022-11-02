@@ -12,12 +12,17 @@
   font-family: "Windows Regular";
 }
 
+h2 {
+  color: white;
+}
+
 body {
   margin: 0;
   padding: 0;
   overflow-y: hidden;
-  background-image: url(../images/backgroundwelcome.gif);
+  background-image: url(../images/background-gif-website-0.gif);
   background-size: cover;
+  color: white;
 }
 
 @font-face {
@@ -42,7 +47,7 @@ div {
 
 a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 section {
@@ -55,7 +60,7 @@ section {
 }
 
 span {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 /* Animation boutons bleu */
@@ -69,7 +74,7 @@ span {
   border-radius: 2px;
   font-size: 1.5rem;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .button:hover {
@@ -125,11 +130,11 @@ div:nth-of-type(5) {
   bottom: 0;
   height: 43px;
   width: 100%;
-  background: rgba(214, 172, 244, 0.537254902);
+  background: rgba(142, 160, 249, 0.537254902);
   display: flex;
   z-index: 999999999;
   justify-content: space-between;
-  color: rgb(28, 28, 28);
+  color: rgb(255, 255, 255);
 }
 
 .start-windows98 {
@@ -160,7 +165,7 @@ div:nth-of-type(5) {
     bottom: 0;
     height: 53px;
     width: 100%;
-    background: rgba(214, 172, 244, 0.5490196078);
+    background: rgba(142, 160, 249, 0.537254902);
     display: flex;
     z-index: 999999999;
     justify-content: space-between;
