@@ -18,7 +18,6 @@ body {
   overflow-y: hidden;
   background-image: url(../images/backgroundwelcome.gif);
   background-size: cover;
-  color: aliceblue;
 }
 
 @font-face {
