@@ -1,7 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Windows Regular";
+}
+
 body {
-  font-family: "Source Code Pro";
   color: white;
-  background: rgb(20, 20, 20);
+  background: black;
 }
 
 .game {
@@ -60,11 +65,9 @@ body {
     left: -20px;
   }
 }
-.message {
+.message-container {
   color: white;
-  font-size: 2rem;
-  font-family: "Press Start 2P";
-  background: black;
+  font-size: 100px;
   margin: 0;
   padding: 1rem 7rem;
   text-align: center;
@@ -76,6 +79,13 @@ body {
     height: 200px;
     border: 1px solid rgb(255, 255, 255);
     margin: auto;
+  }
+  .message-container {
+    color: white;
+    font-size: 50px;
+    margin: 0;
+    padding: 1rem 7rem;
+    text-align: center;
   }
 }
 
