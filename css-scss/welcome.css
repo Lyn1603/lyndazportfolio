@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url(../images/bgtech.gif);
+    background-image: url(../images/matrix-gif-14.gif);
     background-size: cover;
     text-align: center;
     color: white;
@@ -59,14 +59,7 @@ h2{
 
 @media screen and (max-width: 900px) {
 
-   body{
-    text-align: center;
-    
-    
-   }
-
    
-    
    a{
     position: relative;
     bottom: 50px;
