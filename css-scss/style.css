@@ -95,15 +95,19 @@ span {
 
 /* Fin Animation boutons bleu */
 .skills {
-  width: 70%;
+  width: 40%;
 }
 
 .contacts {
-  width: 70%;
+  width: 40%;
 }
 
 .me {
-  width: 70%;
+  width: 40%;
+}
+
+.computer {
+  width: 50%;
 }
 
 .panda {
@@ -111,7 +115,7 @@ span {
 }
 
 .activities {
-  width: 70%;
+  width: 40%;
 }
 
 .computer {
@@ -209,7 +213,7 @@ div:nth-of-type(5) {
   }
   .matête {
     position: relative;
-    right: 50px;
+    right: 25px;
     width: 15%;
     border-radius: 50%;
   }
@@ -243,7 +247,7 @@ div:nth-of-type(5) {
     grid-row: 5/6;
   }
   .start-windows98 {
-    width: 50%;
+    width: 70%;
   }
   .panda {
     width: 32%;
@@ -251,7 +255,8 @@ div:nth-of-type(5) {
   #time {
     position: relative;
     font-size: 40px;
-    right: 15px;
+    right: 20px;
+    color: white;
   }
   .closebutton {
     width: 70%;
