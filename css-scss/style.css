@@ -94,6 +94,30 @@ span {
 }
 
 /* Fin Animation boutons bleu */
+.skills {
+  width: 70%;
+}
+
+.contacts {
+  width: 70%;
+}
+
+.me {
+  width: 70%;
+}
+
+.panda {
+  width: 20%;
+}
+
+.activities {
+  width: 70%;
+}
+
+.computer {
+  color: white;
+}
+
 /* ==========================================================================
     ICONS
 ========================================================================== */
@@ -160,6 +184,18 @@ div:nth-of-type(5) {
   body {
     text-align: center;
   }
+  .skills {
+    width: 40%;
+  }
+  .contacts {
+    width: 150%;
+  }
+  .me {
+    width: 150%;
+  }
+  .activities {
+    width: 40%;
+  }
   .taskbar {
     position: absolute;
     bottom: 0;
@@ -187,7 +223,7 @@ div:nth-of-type(5) {
     padding-left: 25px;
   }
   div:nth-of-type(1) {
-    grid-row: 1/3;
+    grid-row: 1/4;
     grid-row: 1/2;
   }
   div:nth-of-type(2) {
