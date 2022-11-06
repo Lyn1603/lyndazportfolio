@@ -90,7 +90,7 @@ span {
   left: -100px;
   z-index: -1;
   transition: all 0.5s;
-  box-shadow: inset -10px -10px 25px 0px rgba(129, 118, 143, 0.25), -10px 10px 25px 0 , 103, 120, 125, 0.25;
+  box-shadow: inset -10px -10px 25px 0px rgba(129, 118, 143, 0.25), -10px 10px 25px 0prgba 103, 120, 125, 0.25 5;
 }
 
 /* Fin Animation boutons bleu */
@@ -150,6 +150,23 @@ div:nth-of-type(5) {
   grid-row: 5/6;
 }
 
+.icons-popup img {
+  width: 5%;
+}
+
+.réseaux {
+  padding-top: 20px;
+}
+.réseaux img {
+  width: 30%;
+}
+
+li {
+  text-align: left;
+  list-style-type: none;
+  font-size: 30px;
+}
+
 /* ==========================================================================
     TASKBAR
 ========================================================================== */
@@ -199,6 +216,20 @@ div:nth-of-type(5) {
   }
   .activities {
     width: 40%;
+  }
+  .icons-popup img {
+    width: 30%;
+  }
+  .réseaux {
+    padding-top: 20px;
+  }
+  .réseaux img {
+    width: 30%;
+  }
+  li {
+    text-align: left;
+    list-style-type: none;
+    font-size: 30px;
   }
   .taskbar {
     position: absolute;

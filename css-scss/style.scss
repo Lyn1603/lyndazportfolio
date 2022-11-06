@@ -163,6 +163,27 @@ div:nth-of-type(5){
 @import url(../css-scss/composants/modal-hobbies.css);
 @import url(../css-scss/composants/modal-contacts.css);
 
+.icons-popup{
+    img{
+      width: 5%;
+    }
+    
+}
+
+.réseaux{
+  padding-top: 20px;
+  img{
+    width: 30%;
+  }
+  
+}
+
+li{
+  text-align: left;
+  list-style-type:none;
+  font-size: 30px;
+}
+
   /* ==========================================================================
     TASKBAR
 ========================================================================== */
@@ -225,6 +246,28 @@ div:nth-of-type(5){
   
   .activities{
     width: 40%;
+  }
+
+  
+  .icons-popup{
+    img{
+      width: 30%;
+    }
+
+  }
+
+  .réseaux{
+    padding-top: 20px;
+    img{
+      width: 30%;
+    }
+    
+  }
+
+  li{
+    text-align: left;
+    list-style-type:none;
+    font-size: 30px;
   }
   .taskbar{
     position: absolute;
