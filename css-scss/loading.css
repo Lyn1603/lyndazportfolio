@@ -11,6 +11,8 @@
     overflow-y: hidden;
     background-image:url(../images/matrix-gif-14.gif);
     background-size: cover;
+    font-family: "Windows Regular";
+ 
   }
 
   @font-face {

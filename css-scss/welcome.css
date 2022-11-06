@@ -59,7 +59,10 @@ h2{
 
 @media screen and (max-width: 900px) {
 
-   
+    body{
+        font-family: "Windows Regular";
+    }
+    
    a{
     position: relative;
     bottom: 50px;
