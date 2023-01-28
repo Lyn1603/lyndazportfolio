@@ -20,7 +20,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-y: hidden;
-  background-image: url(../images/background-gif-website-0.gif);
+  background-image: url(../images/backgroundwelcome.gif);
   background-size: cover;
   color: white;
 }
@@ -204,6 +204,7 @@ li {
 @media screen and (max-width: 900px) {
   body {
     text-align: center;
+    font-family: "Windows Regular";
   }
   .skills {
     width: 40%;

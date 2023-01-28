@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     overflow-y: hidden;
-    background-image:url(../images/matrix-gif-14.gif);
+    background-image:url(../images/backgroundwelcome.gif);
     background-size: cover;
     font-family: "Windows Regular";
  
@@ -48,7 +48,7 @@
   #myprogressBar {
     width: 0%;
     height: 20px;
-    background-color: #7db1e2;
+    background-color: #ac7de2;
   }
 
 
