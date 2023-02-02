@@ -34,7 +34,7 @@ body {
 
 @font-face {
   font-family: "Windows Regular";
-  src: url("../font/Windows.ttf") format("truetype");
+  src: url("../font/Windows.ttf") format("ttf");
 }
 .matête {
   position: relative;
