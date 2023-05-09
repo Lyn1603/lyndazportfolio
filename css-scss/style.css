@@ -151,14 +151,22 @@ div:nth-of-type(5) {
 }
 
 .icons-popup img {
-  width: 5%;
+  width: 5vw;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .réseaux {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-top: 20px;
-}
-.réseaux img {
-  width: 30%;
 }
 
 li {
