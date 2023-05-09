@@ -16,25 +16,18 @@ h2 {
   color: white;
 }
 
-.content{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 body {
   margin: 0;
   padding: 0;
   overflow-y: hidden;
-  background-image: url(../images/backgroundwelcome.gif);
+  background-image: url(../images/stars.gif);
   background-size: cover;
   color: white;
 }
 
 @font-face {
   font-family: "Windows Regular";
-  src: url("../font/Windows.ttf") format("ttf");
+  src: url("../font/WindowsRegular.ttf") format("truetype");
 }
 .matête {
   position: relative;
@@ -61,7 +54,7 @@ section {
   justify-content: center;
   align-items: center;
   display: grid;
-  grid-template-columns: 10% 10% 10% 10% 10%;
+  grid-template-columns: 10vw 10vw 10vw 10vw 10vw;
   grid-template-rows: 10vh 10vh 10vh 10vh 10vh;
   padding-top: 110px;
 }
@@ -129,8 +122,6 @@ span {
   color: white;
 }
 
-
-
 /* ==========================================================================
     ICONS
 ========================================================================== */
@@ -184,7 +175,7 @@ li {
   bottom: 0;
   height: 43px;
   width: 100%;
-  background: rgba(142, 160, 249, 0.537254902);
+  background: rgba(142, 178, 249, 0.537254902);
   display: flex;
   z-index: 999999999;
   justify-content: space-between;
@@ -260,12 +251,12 @@ li {
   }
   section {
     padding-top: 100px;
+    display: grid;
     justify-content: center;
     align-items: center;
-    display: grid;
-    grid-template-columns: 10% 10% 10% 10% 10% 10%;
+    grid-template-columns: 10vw 10vw 10vw 10vw 10vw 10vw;
     grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh;
-    padding-left: 25px;
+    padding-left: 40px;
   }
   div:nth-of-type(1) {
     grid-row: 1/4;

@@ -1,8 +1,15 @@
+@font-face {
+    font-family: "Windows Regular";
+    src: url("../font/WindowsRegular.ttf") format("truetype"),
+           
+   }
+
 *{
     padding: 0;
     margin: 0;
     font-family: "Windows Regular";   
 }
+
 
 body{
     background-image: url(../images/backgroundwelcome0.gif);
