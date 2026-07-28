@@ -1,27 +1,145 @@
-# How did i deploy my portfolio 
+# 🌟 Lyndazfolio v2.0
 
-Hello dear visitors, here is a little guide about how about how i deploy my website, enjoy !
+> **Personal Portfolio** of **Lynda Benabdessadok** — Junior Web Developer from Paris  
+> *Crafting pixel-perfect experiences where Y2K nostalgia meets modern design systems.*
 
-## STEP 1 
+[![Live Site](https://img.shields.io/badge/Live-lyndazfolio.vercel.app-blue?style=for-the-badge)](https://lyndazfolio.vercel.app)
+[![GitHub](https://img.shields.io/badge/GitHub-Lyn1603-333?style=for-the-badge&logo=github)](https://github.com/Lyn1603/lyndazportfolio)
+[![Built with Lovable](https://img.shields.io/badge/Built%20with-Lovable-5E4DFF?style=for-the-badge)](https://lovable.dev)
 
-I downloaded Vercel (a frontend developer tool) in which i joined my github account in order to create a Vercel account and to deploy my website.
+---
 
-## STEP 2
+## 📋 Table of Contents
 
-Once my website is deployed, in the deployments tab on Vercel, i activated the Checkly feature in the "Running Checks" tab. For verify that i installed Check 
+- [About This Portfolio](#-about-this-portfolio)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Getting Started](#-getting-started)
+- [Scripts & Commands](#-scripts--commands)
+- [Project Showcase](#-project-showcase)
+- [Skills & Expertise](#-skills--expertise)
+- [Contact](#-contact)
 
-## STEP 3
+---
 
-Using github actions, i found an extension call imgbot in the github marketplace, and i activated it on my portfolio repo. I did a git cimmit and push to verificated and i found two branches : the main branch and the imgbot branch.
+## 🎯 About This Portfolio
 
+This is the **v2.0 reimagining** of my 2022 Y2K pixel-art desktop project. Now built with **TanStack Start, TypeScript, React, and Tailwind CSS**.
 
-## STEP 5 
+**Philosophy:** Y2K nostalgia meets contemporary design, responsive across all devices, pixel-perfect experiences with performance in mind.
 
-After this, i wanted to share my work on discord so i use zapier to connect my github account to my discord. To do this, you have to install zapier and i zaped my github to my discord account. i created a specific discord server to implement my bot here is the link : https://discord.gg/ku3YfnPW 
+---
 
-# There is my explication of how i deploy my portfolio i hoped that you find this readme interesting and understanding, thank you !! 
+## ✨ Features
 
-More informations about my course :
-https://www.loom.com/share/490271049a6b4c77ac26339c21370604
-https://zapier.com/shared/dd32116689646e1cec9b92d98b623d123b936a6a
+✅ **Animated Starry Background** — Custom CSS animations with parallax effect  
+✅ **Project Showcase** — 4 featured projects with live links  
+✅ **Responsive Design** — Mobile, tablet, desktop optimized  
+✅ **Dark Theme** — Y2K aesthetic with custom color palette  
+✅ **File-Based Routing** — TanStack Router for seamless navigation  
+✅ **Meta & SEO** — Open Graph, description tags for social sharing  
+✅ **Fast Load Times** — Image lazy-loading, optimized builds  
+✅ **Custom Favicon** — PNG favicon in `/public`  
 
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **Framework**: TanStack Start v1.168.26 + React 19
+- **Routing**: TanStack Router with file-based routing
+- **Language**: TypeScript 5.8+ (strict mode)
+- **Styling**: Tailwind CSS 4.2.1 + custom CSS animations
+- **Component System**: Radix UI (20+ components)
+- **Icons**: Lucide React (195+ icons)
+- **State**: TanStack React Query 5.101.1
+
+### Development
+- **Build**: Vite 8.0.16 (lightning-fast HMR)
+- **Linting**: ESLint 9.32.0
+- **Formatting**: Prettier 3.7.3
+- **Package Manager**: npm / Bun
+
+### Deployment
+- **Hosting**: Vercel (CI/CD ready)
+- **Version Control**: GitHub
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- **Node.js** v18+ 
+- **npm** v9+ or **Bun** v1.0+
+- **Git**
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/Lyn1603/lyndazportfolio.git
+cd lyndazportfolio
+
+# Install dependencies
+npm install
+
+# Start dev server (http://localhost:5173)
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+---
+
+## 📋 Scripts & Commands
+
+```bash
+npm run dev          # Start dev server with HMR
+npm run build        # Build for production
+npm run build:dev    # Build in development mode
+npm run preview      # Preview production build
+npm run lint         # Run ESLint
+npm run lint --fix   # Fix linting errors
+npm run format       # Format code with Prettier
+```
+
+---
+
+## 📈 Featured Projects
+
+| Project | Tech Stack | Live |
+|---------|-----------|------|
+| **Bloop** | Web Audio, Modern JS | [bloop-on.cloud](https://bloop-on.cloud/) |
+| **Trocadero** | HTML5, SCSS, Vanilla JS | [vercel.app](https://trocadero-lynda-benabdessadok.vercel.app/) |
+| **Pokedex** | Vanilla JS, Fetch API | [vercel.app](https://js-a2-lynda-co.vercel.app/) |
+| **App-Phone** | HTML, CSS, Mobile-first | [vercel.app](https://app-phone-lynda-benabdessadok-lepw.vercel.app/) |
+
+---
+
+## 🎓 Skills
+
+**Frontend**: HTML5, CSS3, JavaScript, React, TypeScript  
+**Styling**: Tailwind CSS, SCSS, CSS animations  
+**Backend**: PHP, Python  
+**Design**: Figma, Photoshop  
+**DevOps**: Vercel, GitHub Actions  
+
+---
+
+## 📞 Contact & Links
+
+- **Email**: [lylyben74@gmail.com](mailto:lylyben74@gmail.com)
+- **GitHub**: [@Lyn1603](https://github.com/Lyn1603/lyndazportfolio)
+- **Discord**: [Join](https://discord.gg/ku3YfnPW)
+
+---
+
+## 📝 License
+
+© 2022–2026 Lynda Benabdessadok | IIM Digital School Paris
+
+Built with ❤️ and starry skies ✨
