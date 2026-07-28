@@ -1,10 +1,9 @@
-@import "tailwindcss" source(none);
-@source "../src";
+@import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
-@theme inline {
+@theme {
   --color-indigo-night: hsl(260 60% 8%);
   --color-indigo-deep: hsl(258 65% 12%);
   --color-lavender-glow: hsl(270 70% 85%);
