@@ -1,0 +1,69 @@
+import { createFileRoute, Link } from "@tanstack/react-router";
+
+export const Route = createFileRoute("/about")({
+  head: () => ({
+    meta: [
+      { title: "About — Lynda Benabdessadok" },
+      { name: "description", content: "About Lynda Benabdessadok — 23yo junior web developer, IIM Digital School Paris graduate passionate about digital product management." },
+      { property: "og:title", content: "About — Lynda Benabdessadok" },
+      { property: "og:description", content: "23yo junior web developer, IIM Digital School Paris." },
+    ],
+  }),
+  component: About,
+});
+
+const hobbies = ["Technology", "Tennis", "Music", "Series"];
+
+function About() {
+  return (
+    <div className="starry-gradient min-h-screen font-body text-lavender-glow">
+      <nav className="sticky top-0 z-50 flex items-center justify-between border-b border-border-dim px-6 py-4 backdrop-blur-md">
+        <Link to="/" className="font-display text-2xl uppercase tracking-tighter">Lyndazfolio v2.4</Link>
+        <Link to="/" className="font-mono text-xs uppercase tracking-widest hover:text-accent-pink">← Back</Link>
+      </nav>
+
+      <main className="mx-auto max-w-3xl px-6 py-24">
+        <div className="font-mono text-xs uppercase tracking-widest text-accent-pink">[00] Who</div>
+        <h1 className="mt-4 font-display text-7xl uppercase leading-[0.9] sm:text-8xl">
+          Hello dear<br />network.
+        </h1>
+
+        <div className="mt-16 space-y-6 text-lg leading-relaxed opacity-90">
+          <p>
+            I'm <strong>Lynda Benabdessadok</strong>, 23 years old, freshly graduated from{" "}
+            <strong>IIM Digital School Paris</strong>. Junior project manager, passionate about
+            digital product management and meaningful user experiences.
+          </p>
+          <p>
+            This portfolio started in 2022 as a pixel-art Y2K desktop — a small manifesto that
+            "tech is for cool kids". Right now, my aspiration grown further and i want to leave my own mark in this world.
+          </p>
+        </div>
+
+        <section className="mt-24 border-t border-border-dim pt-12">
+          <h2 className="font-display text-4xl uppercase">Hobbies</h2>
+          <ul className="mt-6 grid grid-cols-2 gap-4 font-mono text-sm uppercase tracking-widest opacity-80 sm:grid-cols-4">
+            {hobbies.map((h) => (
+              <li key={h} className="border border-border-dim p-4">— {h}</li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="mt-24 border-t border-border-dim pt-12">
+          <h2 className="font-display text-4xl uppercase">Elsewhere</h2>
+          <a
+            href="mailto:lylyben74@gmail.com"
+            className="mt-6 block font-display text-3xl lowercase text-star-bright underline decoration-accent-pink underline-offset-8 hover:text-accent-pink"
+          >
+            lylyben74@gmail.com
+          </a>
+          <div className="mt-6 flex flex-wrap gap-4">
+            <a href="https://github.com/Lyn1603/lyndazportfolio" target="_blank" rel="noreferrer" className="border border-star-bright px-6 py-3 font-display text-xl uppercase hover:bg-star-bright hover:text-indigo-night transition-all">GitHub</a>
+            <a href="https://discord.gg/ku3YfnPW" target="_blank" rel="noreferrer" className="bg-accent-pink px-6 py-3 font-display text-xl uppercase text-indigo-night hover:scale-105 transition-transform">Discord</a>
+          </div>
+        </section>
+
+      </main>
+    </div>
+  );
+}

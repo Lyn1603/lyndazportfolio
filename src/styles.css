@@ -1,0 +1,61 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-indigo-night: hsl(260 60% 8%);
+  --color-indigo-deep: hsl(258 65% 12%);
+  --color-lavender-glow: hsl(270 70% 85%);
+  --color-star-bright: hsl(280 100% 98%);
+  --color-accent-pink: hsl(320 100% 70%);
+  --color-border-dim: hsl(270 70% 85% / 0.15);
+
+  --font-display: 'VT323', monospace;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+
+  --color-background: var(--color-indigo-night);
+  --color-foreground: var(--color-lavender-glow);
+  --color-border: var(--color-border-dim);
+  --color-primary: var(--color-accent-pink);
+  --color-primary-foreground: var(--color-indigo-night);
+  --color-muted: hsl(260 40% 15%);
+  --color-muted-foreground: hsl(270 30% 65%);
+  --color-ring: var(--color-accent-pink);
+}
+
+@keyframes starPulse {
+  0%, 100% { opacity: 0.3; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+@keyframes heroSlide {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@utility star-particle {
+  animation: starPulse var(--d, 3s) infinite ease-in-out;
+}
+
+@utility starry-gradient {
+  background: linear-gradient(180deg, #0a061a 0%, #1a0b3d 100%);
+}
+
+@utility scanline-overlay {
+  background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.1) 50%);
+  background-size: 100% 4px;
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html, body {
+    background-color: var(--color-indigo-night);
+    color: var(--color-lavender-glow);
+    font-family: var(--font-body);
+  }
+}
