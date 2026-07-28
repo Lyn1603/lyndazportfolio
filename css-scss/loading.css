@@ -1,0 +1,89 @@
+/* ==========================================================================
+    GENERAL
+========================================================================== */
+@font-face {
+  font-family: "Windows Regular";
+  src: url("../font/WindowsRegular.ttf") format("truetype"),
+         
+ }
+ 
+* {
+    box-sizing: border-box;
+    font-family: "Windows Regular";
+
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    background-image:url(../images/moon.gif);
+    background-size: cover;
+ 
+  }
+
+  
+
+
+/* ==========================================================================
+    BARRE DE CHARGEMENT
+========================================================================== */
+
+
+#Progress_Status {
+    margin-top: 300px;
+    margin-left: 145px;
+    width: 80%;
+    background-color: #ddd;
+    
+  }
+
+  .click{
+    height: 10vh;
+    width: 10%;
+    margin-top: 100px;
+    margin-left: 45%;
+    box-shadow: 3px 5px rgb(84, 83, 83);
+    font-family: "Windows Regular"; 
+    font-size: 50px;
+  }
+    
+  #myprogressBar {
+    width: 0%;
+    height: 20px;
+    background-color: #7da9e2;
+  }
+
+
+  /* ==========================================================================
+    RESPONSIVE
+========================================================================== */
+
+@media screen and (max-width: 900px) {
+
+  body{
+   background-size: 1500px;
+  }
+ 
+  #Progress_Status {
+    position: relative;
+    right: 95px;
+    width: 70%;
+    bottom: 90px;
+    background-color: #ddd;
+    
+  }
+
+  .click{
+    position: relative;
+    right: 85px;
+    width: 50%;
+    bottom: 30px;
+    box-shadow: 3px 5px rgb(84, 83, 83);
+    font-family: "Windows Regular"; 
+    font-size: 50px;
+  }
+
+ 
+
+}

@@ -1,0 +1,352 @@
+/* ==========================================================================
+    GENERAL
+========================================================================== */
+
+* {
+    box-sizing: border-box;
+    font-family: "Windows Regular";
+  }
+  
+  h2{
+    color: white;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+    background-image: url(../images/stars.png); 
+    background-size: cover;
+    color: white;
+  }
+
+  @font-face {
+    font-family: "Windows Regular";
+    src: url("../font/WindowsRegular.ttf") format("truetype"),
+           
+   }
+
+   .matête{
+    position: relative;
+    right: 260px;
+    border-radius: 60%;
+}
+   
+  div{
+    text-align: center;
+  }
+
+
+  .desktop {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+  }
+
+   
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+
+  section{
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 10vw 10vw 10vw 10vw 10vw;
+    grid-template-rows: 10vh 10vh 10vh 10vh 10vh;
+    padding-top: 110px;
+
+  }
+
+  span{
+    color: rgb(255, 255, 255);
+  }
+
+/* Animation boutons bleu */
+
+  .button /* Tout d'abord, on initialise le button*/ {
+    cursor: pointer;
+    border: 0px;
+    background:transparent;
+    position: relative;
+    transition: all .2s;
+    overflow: hidden;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+  }
+  
+  
+  .button:hover /* la pseudo classe hover permet de spécifier l'apparence que va prendre un élément au survol de celle-ci*/ {
+    background-color: rgba(8, 8, 162, 0.586);
+    color: aliceblue;
+    border: dashed 5px rgba(194, 179, 179, 0.732);
+}
+
+
+.button::after /* la pseudo classe after permet d'excuter les derniers éléments qui ont était selectionnés*/ {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  z-index: -1;
+  transition: all .5s;
+  box-shadow: inset -10px -10px 25px 0px rgba(129, 118, 143, 0.25), -10px 10px 25px 0prgba(103, 120, 125, 0.25)5;
+
+}
+ 
+/* Fin Animation boutons bleu */
+
+.skills{
+  width: 40%;
+}
+
+.contacts{
+  width: 40%;
+}
+
+.me{
+  width: 40%;
+}
+
+.computer{
+  width: 50%;
+}
+
+.panda{
+  width: 20%;
+}
+
+.activities{
+  width: 40%;
+}
+
+.computer{
+  color: white;
+}
+
+  /* ==========================================================================
+    ICONS
+========================================================================== */
+
+div:nth-of-type(1){
+  grid-row: 1/2;
+  grid-row: 1/2;  
+  
+}
+
+div:nth-of-type(2){
+  grid-column: 5/6; 
+  grid-row: -6/-5;
+   
+}
+
+div:nth-of-type(3){
+  grid-column: 3/4; 
+  grid-row: 3/4;
+}
+
+div:nth-of-type(4){
+  grid-column: 5/6; 
+  grid-row: -2/-1;
+}
+
+div:nth-of-type(5){
+  grid-column: 1/2; 
+  grid-row: 5/6;
+}
+
+@import url(../css-scss/composants/modal-me.css);
+@import url(../css-scss/composants/modal-skills.css);
+@import url(../css-scss/composants/modal-hobbies.css);
+@import url(../css-scss/composants/modal-contacts.css);
+
+.icons-popup{
+    img{
+      width: 5vw;
+    }
+    
+}
+
+.projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+
+.réseaux{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  
+}
+
+li{
+  text-align: left;
+  list-style-type:none;
+  font-size: 30px;
+}
+
+  /* ==========================================================================
+    TASKBAR
+========================================================================== */
+
+
+.taskbar {
+  position: absolute;
+  bottom: 0;
+  height: 43px;
+  width: 100%;
+  background: #8eb2f989;
+  display: flex;
+  z-index: 999999999;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+
+} 
+
+.start-windows98{
+  width: 15%;
+}
+
+
+  /* ==========================================================================
+   BUTTON
+========================================================================== */
+
+@import url(../css-scss/composants/modal-startbutton.css);
+
+  /* ==========================================================================
+   HORLOGE
+========================================================================== */
+#time{
+  position: relative;
+  font-size:30px;
+  right: 20px;
+}
+  /* ==========================================================================
+   RESPONSIVE
+========================================================================== */
+
+
+@media screen and (max-width: 900px) {
+
+  body{
+    text-align: center;
+    font-family: "Windows Regular";
+  }
+
+  .skills{
+    width: 40%;
+  }
+  
+  .contacts{
+    width: 150%;
+  }
+  
+  .me{
+    width: 150%;
+  }
+  
+  .activities{
+    width: 40%;
+  }
+
+  
+  .icons-popup{
+    img{
+      width: 30%;
+    }
+
+  }
+
+  .réseaux{
+    padding-top: 20px;
+    img{
+      width: 30%;
+    }
+    
+  }
+
+  li{
+    text-align: left;
+    list-style-type:none;
+    font-size: 30px;
+  }
+  .taskbar{
+    position: absolute;
+    bottom: 0;
+    height: 53px;
+    width: 100%;
+    background: #80aef789;
+    display: flex;
+    z-index: 999999999;
+    justify-content: space-between;
+    color: rgb(28, 28, 28);
+  }
+  .matête{
+    position: relative;
+    right: 25px;
+    width: 15%;
+    border-radius: 50%;
+}
+
+  section{
+    padding-top: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 10vw 10vw 10vw 10vw 10vw 10vw ;
+    grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh; 
+    padding-left: 40px; 
+  }
+
+  div:nth-of-type(1){
+    grid-row: 1/4;
+    grid-row: 1/2;
+  }
+  
+  div:nth-of-type(2){
+    grid-column: 7/8; 
+    grid-row: -7/-6;
+     
+  }
+  
+  div:nth-of-type(3){
+    grid-column: 3/7; 
+    grid-row: 3/4;
+  }
+  
+  div:nth-of-type(4){
+    grid-column: 7/8; 
+    grid-row: -3/-2;
+  }
+  
+  div:nth-of-type(5){
+    grid-column: 1/2; 
+    grid-row: 5/6;
+  }
+  
+  .start-windows98{
+    width: 70%;
+  }
+  .panda{
+    width: 32%;
+  }
+  #time{
+    position: relative;
+    font-size:40px;
+    right: 20px;
+    color: white;
+  }
+
+  .closebutton{
+    width: 70%;
+  }
+}
