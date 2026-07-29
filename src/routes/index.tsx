@@ -3,6 +3,22 @@ import bloopImg from "@/assets/project-bloop.jpg";
 import trocaderoImg from "@/assets/project-trocadero.jpg";
 import pokedexImg from "@/assets/project-pokedex.jpg";
 import appPhoneImg from "@/assets/project-appphone.jpg";
+import {
+  SiReact,
+  SiVuedotjs,
+  SiTypescript,
+  SiBootstrap,
+  SiTailwindcss,
+  SiSpringboot,
+  SiFigma,
+  SiAdobephotoshop,
+  SiNotion,
+  SiJira,
+  SiMicrosoftoffice,
+  SiVercel,
+  SiGithubactions,
+} from "react-icons/si";
+import { Gantt } from "lucide-react";
 
 
 export const Route = createFileRoute("/")({
@@ -78,48 +94,47 @@ const stack = [
   { 
     title: "Frameworks", 
     items: [
-      { name: "React", icon: "⚛️" },
-      { name: "Vue.js", icon: "💚" },
-      { name: "Spring Boot", icon: "🍃" }
+      { name: "React", icon: SiReact, color: "#61DAFB" },
+      { name: "Vue.js", icon: SiVuedotjs, color: "#4FC08D" },
+      { name: "Spring Boot", icon: SiSpringboot, color: "#6DB33F" }
     ]
   },
   { 
     title: "Languages", 
     items: [
-      { name: "TypeScript", icon: "🔷" },
-      { name: "JavaScript", icon: "💛" },
-      { name: "Python", icon: "🐍" }
+      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+      { name: "Python", icon: null, emoji: "🐍" }
     ]
   },
   { 
     title: "Styling", 
     items: [
-      { name: "Tailwind CSS", icon: "🎨" },
-      { name: "Bootstrap", icon: "⬜" },
-      { name: "SCSS/SASS", icon: "🎯" }
+      { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
+      { name: "Bootstrap", icon: SiBootstrap, color: "#7952B3" },
+      { name: "SCSS/SASS", icon: null, emoji: "🎨" }
     ]
   },
   { 
     title: "Design Tools", 
     items: [
-      { name: "Figma", icon: "🎨" },
-      { name: "Photoshop", icon: "📐" }
+      { name: "Figma", icon: SiFigma, color: "#F24E1E" },
+      { name: "Photoshop", icon: SiAdobephotoshop, color: "#31A8FF" }
     ]
   },
   { 
     title: "Project Management", 
     items: [
-      { name: "Notion", icon: "📝" },
-      { name: "Jira", icon: "⚙️" },
-      { name: "Gantt", icon: "📊" },
-      { name: "Microsoft Suite", icon: "📋" }
+      { name: "Notion", icon: SiNotion, color: "#FFFFFF" },
+      { name: "Jira", icon: SiJira, color: "#0052CC" },
+      { name: "Gantt", icon: null, emoji: "📊" },
+      { name: "Microsoft Suite", icon: SiMicrosoftoffice, color: "#7FBA00" }
     ]
   },
   { 
     title: "DevOps", 
     items: [
-      { name: "Vercel", icon: "⚡" },
-      { name: "GitHub Actions", icon: "🔧" }
+      { name: "Vercel", icon: SiVercel, color: "#000000" },
+      { name: "GitHub Actions", icon: SiGithubactions, color: "#2088FF" }
     ]
   },
 ];
@@ -255,11 +270,15 @@ function Index() {
               {stack.map((category) => (
                 <div key={category.title} className="space-y-4">
                   <div className="font-display text-lg uppercase">{category.title}</div>
-                  <div className="flex flex-wrap gap-3">
+                  <div className="flex flex-wrap gap-6">
                     {category.items.map((item) => (
-                      <div key={item.name} className="flex flex-col items-center gap-2" title={item.name}>
-                        <span className="text-3xl">{item.icon}</span>
-                        <span className="font-mono text-[10px] opacity-60">{item.name}</span>
+                      <div key={item.name} className="flex flex-col items-center gap-2 hover:scale-110 transition-transform" title={item.name}>
+                        {item.icon ? (
+                          <item.icon size={40} style={{ color: item.color }} />
+                        ) : (
+                          <span className="text-4xl">{item.emoji}</span>
+                        )}
+                        <span className="font-mono text-[10px] opacity-60 text-center">{item.name}</span>
                       </div>
                     ))}
                   </div>
