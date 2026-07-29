@@ -4,19 +4,17 @@ import trocaderoImg from "@/assets/project-trocadero.jpg";
 import pokedexImg from "@/assets/project-pokedex.jpg";
 import appPhoneImg from "@/assets/project-appphone.jpg";
 import {
-  SiReact,
-  SiVuedotjs,
-  SiTypescript,
-  SiBootstrap,
-  SiTailwindcss,
-  SiSpringboot,
-  SiFigma,
-  SiAdobephotoshop,
-  SiNotion,
-  SiJira,
-  SiVercel,
-  SiGithubactions,
-} from "react-icons/si";
+  FaReact,
+  FaVuejs,
+  FaBootstrap,
+  FaJava,
+  FaFigma,
+  FaNotion,
+  FaJira,
+  FaMicrosoft,
+} from "react-icons/fa6";
+import { SiTailwindcss, SiTypescript, SiSpringboot } from "react-icons/si";
+import { VscAzure } from "react-icons/vsc";
 
 
 export const Route = createFileRoute("/")({
@@ -92,8 +90,8 @@ const stack = [
   { 
     title: "Frameworks", 
     items: [
-      { name: "React", icon: SiReact, color: "#61DAFB" },
-      { name: "Vue.js", icon: SiVuedotjs, color: "#4FC08D" },
+      { name: "React", icon: FaReact, color: "#61DAFB" },
+      { name: "Vue.js", icon: FaVuejs, color: "#4FC08D" },
       { name: "Spring Boot", icon: SiSpringboot, color: "#6DB33F" }
     ]
   },
@@ -108,22 +106,22 @@ const stack = [
     title: "Styling", 
     items: [
       { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
-      { name: "Bootstrap", icon: SiBootstrap, color: "#7952B3" },
+      { name: "Bootstrap", icon: FaBootstrap, color: "#7952B3" },
       { name: "SCSS/SASS", icon: null, emoji: "🎨" }
     ]
   },
   { 
     title: "Design Tools", 
     items: [
-      { name: "Figma", icon: SiFigma, color: "#F24E1E" },
-      { name: "Photoshop", icon: SiAdobephotoshop, color: "#31A8FF" }
+      { name: "Figma", icon: FaFigma, color: "#F24E1E" },
+      { name: "Photoshop", icon: null, emoji: "📐" }
     ]
   },
   { 
     title: "Project Management", 
     items: [
-      { name: "Notion", icon: SiNotion, color: "#FFFFFF" },
-      { name: "Jira", icon: SiJira, color: "#0052CC" },
+      { name: "Notion", icon: FaNotion, color: "#FFFFFF" },
+      { name: "Jira", icon: FaJira, color: "#0052CC" },
       { name: "Gantt", icon: null, emoji: "📊" },
       { name: "Microsoft Suite", emoji: "📋" }
     ]
@@ -131,8 +129,8 @@ const stack = [
   { 
     title: "DevOps", 
     items: [
-      { name: "Vercel", icon: SiVercel, color: "#000000" },
-      { name: "GitHub Actions", icon: SiGithubactions, color: "#2088FF" }
+      { name: "Vercel", emoji: "⚪" },
+      { name: "GitHub Actions", emoji: "🔧" }
     ]
   },
 ];
