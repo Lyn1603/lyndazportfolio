@@ -14,11 +14,10 @@ import {
   SiAdobephotoshop,
   SiNotion,
   SiJira,
-  SiMicrosoftoffice,
+  SiMicrosoft,
   SiVercel,
   SiGithubactions,
 } from "react-icons/si";
-import { Gantt } from "lucide-react";
 
 
 export const Route = createFileRoute("/")({
@@ -127,7 +126,7 @@ const stack = [
       { name: "Notion", icon: SiNotion, color: "#FFFFFF" },
       { name: "Jira", icon: SiJira, color: "#0052CC" },
       { name: "Gantt", icon: null, emoji: "📊" },
-      { name: "Microsoft Suite", icon: SiMicrosoftoffice, color: "#7FBA00" }
+      { name: "Microsoft Suite", icon: SiMicrosoft, color: "#0078D4" }
     ]
   },
   { 
