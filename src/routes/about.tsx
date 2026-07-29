@@ -50,12 +50,34 @@ function About() {
         </section>
 
         <section className="mt-24 border-t border-border-dim pt-12">
+          <h2 className="font-display text-4xl uppercase">Certifications</h2>
+          <div className="mt-6 flex items-center gap-6">
+            <a href="https://directory.opquast.com/fr/certificat/BZGDEW/" target="_blank" rel="noreferrer" className="transition-transform hover:scale-110">
+              <img 
+                src="https://api.opquast.com/badge/BZGDEW.svg"
+                alt="Lynda BENABDESSADOK - Certifié(e) Opquast"
+                width="150"
+                height="150"
+              />
+            </a>
+            <div>
+              <a href="https://directory.opquast.com/fr/certificat/BZGDEW/" target="_blank" rel="noreferrer" className="font-display text-xl uppercase text-star-bright underline decoration-accent-pink underline-offset-4 hover:text-accent-pink">
+                Opquast Certification
+              </a>
+              <p className="mt-2 font-mono text-xs uppercase tracking-widest opacity-60">
+                Quality Assurance Web Certification
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-24 border-t border-border-dim pt-12">
           <h2 className="font-display text-4xl uppercase">Elsewhere</h2>
           <a
-            href="mailto:lylyben74@gmail.com"
+            href="mailto:lyndab.pro@gmail.com"
             className="mt-6 block font-display text-3xl lowercase text-star-bright underline decoration-accent-pink underline-offset-8 hover:text-accent-pink"
           >
-            lylyben74@gmail.com
+            lyndab.pro@gmail.com
           </a>
           <div className="mt-6 flex flex-wrap gap-4">
             <a href="https://github.com/Lyn1603/lyndazportfolio" target="_blank" rel="noreferrer" className="border border-star-bright px-6 py-3 font-display text-xl uppercase hover:bg-star-bright hover:text-indigo-night transition-all">GitHub</a>

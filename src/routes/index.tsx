@@ -75,12 +75,53 @@ const projects = [
 
 
 const stack = [
-  { title: "Front End", meta: "HTML5 / CSS3 / JS" },
-  { title: "Preprocessors", meta: "SCSS / SASS" },
-  { title: "Backend", meta: "PHP / Python" },
-  { title: "Design", meta: "Photoshop / Figma" },
-  { title: "Ops", meta: "Vercel / GitHub Actions" },
-  { title: "Monitoring", meta: "Checkly / Zapier" },
+  { 
+    title: "Frameworks", 
+    items: [
+      { name: "React", icon: "⚛️" },
+      { name: "Vue.js", icon: "💚" },
+      { name: "Spring Boot", icon: "🍃" }
+    ]
+  },
+  { 
+    title: "Languages", 
+    items: [
+      { name: "TypeScript", icon: "🔷" },
+      { name: "JavaScript", icon: "💛" },
+      { name: "Python", icon: "🐍" }
+    ]
+  },
+  { 
+    title: "Styling", 
+    items: [
+      { name: "Tailwind CSS", icon: "🎨" },
+      { name: "Bootstrap", icon: "⬜" },
+      { name: "SCSS/SASS", icon: "🎯" }
+    ]
+  },
+  { 
+    title: "Design Tools", 
+    items: [
+      { name: "Figma", icon: "🎨" },
+      { name: "Photoshop", icon: "📐" }
+    ]
+  },
+  { 
+    title: "Project Management", 
+    items: [
+      { name: "Notion", icon: "📝" },
+      { name: "Jira", icon: "⚙️" },
+      { name: "Gantt", icon: "📊" },
+      { name: "Microsoft Suite", icon: "📋" }
+    ]
+  },
+  { 
+    title: "DevOps", 
+    items: [
+      { name: "Vercel", icon: "⚡" },
+      { name: "GitHub Actions", icon: "🔧" }
+    ]
+  },
 ];
 
 function Index() {
@@ -207,19 +248,52 @@ function Index() {
             <div className="md:w-1/3">
               <h3 className="mb-6 font-display text-5xl uppercase">Tech Stack</h3>
               <p className="font-mono text-xs uppercase tracking-widest opacity-50">
-                Continuous integration & deployment focus
+                Frameworks, tools & skills
               </p>
             </div>
             <div className="grid w-full grid-cols-2 gap-8 sm:grid-cols-3 md:w-2/3">
-              {stack.map((s) => (
-                <div key={s.title} className="space-y-2">
-                  <div className="font-display text-3xl uppercase">{s.title}</div>
-                  <div className="font-mono text-xs opacity-60">{s.meta}</div>
+              {stack.map((category) => (
+                <div key={category.title} className="space-y-4">
+                  <div className="font-display text-lg uppercase">{category.title}</div>
+                  <div className="flex flex-wrap gap-3">
+                    {category.items.map((item) => (
+                      <div key={item.name} className="flex flex-col items-center gap-2" title={item.name}>
+                        <span className="text-3xl">{item.icon}</span>
+                        <span className="font-mono text-[10px] opacity-60">{item.name}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               ))}
             </div>
           </div>
         </section>
+      </main>
+
+      {/* Certifications */}
+      <section className="mx-auto max-w-7xl px-6 py-24">
+        <div className="border-t border-border-dim pt-12">
+          <h3 className="mb-8 font-display text-4xl uppercase">Certifications</h3>
+          <div className="flex items-center gap-4">
+            <a href="https://directory.opquast.com/fr/certificat/BZGDEW/" target="_blank" rel="noreferrer" className="transition-transform hover:scale-110">
+              <img 
+                src="https://api.opquast.com/badge/BZGDEW.svg"
+                alt="Lynda BENABDESSADOK - Certifié(e) Opquast"
+                width="150"
+                height="150"
+              />
+            </a>
+            <div className="flex-1">
+              <a href="https://directory.opquast.com/fr/certificat/BZGDEW/" target="_blank" rel="noreferrer" className="font-display text-2xl uppercase text-star-bright underline decoration-accent-pink underline-offset-4 hover:text-accent-pink">
+                Opquast Certification
+              </a>
+              <p className="mt-2 font-mono text-xs uppercase tracking-widest opacity-60">
+                Quality Assurance Web Certification
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       </main>
 
       {/* Connect footer */}
@@ -233,14 +307,14 @@ function Index() {
               Available for new opportunities
             </p>
             <a
-              href="mailto:lylyben74@gmail.com"
+              href="mailto:lyndab.pro@gmail.com"
               className="block font-display text-3xl lowercase text-star-bright underline decoration-accent-pink decoration-2 underline-offset-8 transition-colors hover:text-accent-pink sm:text-5xl"
             >
-              lylyben74@gmail.com
+              lyndab.pro@gmail.com
             </a>
             <div className="flex flex-wrap justify-center gap-4 pt-4">
               <a
-                href="mailto:lylyben74@gmail.com"
+                href="mailto:lyndab.pro@gmail.com"
                 className="bg-accent-pink px-8 py-4 font-display text-2xl uppercase text-indigo-night transition-transform hover:scale-105"
               >
                 Email Me
