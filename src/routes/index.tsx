@@ -313,7 +313,6 @@ function Index() {
           </div>
         </div>
       </section>
-      </main>
 
       {/* Connect footer */}
       <footer id="connect" className="border-t border-border-dim bg-indigo-night/30 px-6 py-32">
