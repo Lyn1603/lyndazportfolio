@@ -14,7 +14,6 @@ import {
   SiAdobephotoshop,
   SiNotion,
   SiJira,
-  SiMicrosoft,
   SiVercel,
   SiGithubactions,
 } from "react-icons/si";
@@ -23,7 +22,7 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Lyndazfolio — Lynda Benabdessadok, Junior Project manager" },
+      { title: "Lynda Benabdessadok — Junior Project manager" },
       { name: "description", content: "Personal portfolio: projects, skills and story of Lynda Benabdessadok, junior web developer from Paris." },
       { property: "og:title", content: "Lyndazfolio — Lynda Benabdessadok" },
       { property: "og:description", content: "Junior Project manager. Y2K nostalgia meets modern web." },
@@ -126,7 +125,7 @@ const stack = [
       { name: "Notion", icon: SiNotion, color: "#FFFFFF" },
       { name: "Jira", icon: SiJira, color: "#0052CC" },
       { name: "Gantt", icon: null, emoji: "📊" },
-      { name: "Microsoft Suite", icon: SiMicrosoft, color: "#0078D4" }
+      { name: "Microsoft Suite", emoji: "📋" }
     ]
   },
   { 
