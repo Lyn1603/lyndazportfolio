@@ -3,18 +3,6 @@ import bloopImg from "@/assets/project-bloop.jpg";
 import trocaderoImg from "@/assets/project-trocadero.jpg";
 import pokedexImg from "@/assets/project-pokedex.jpg";
 import appPhoneImg from "@/assets/project-appphone.jpg";
-import {
-  FaReact,
-  FaVuejs,
-  FaBootstrap,
-  FaJava,
-  FaFigma,
-  FaNotion,
-  FaJira,
-  FaMicrosoft,
-} from "react-icons/fa6";
-import { SiTailwindcss, SiTypescript, SiSpringboot } from "react-icons/si";
-import { VscAzure } from "react-icons/vsc";
 
 
 export const Route = createFileRoute("/")({
@@ -90,47 +78,47 @@ const stack = [
   { 
     title: "Frameworks", 
     items: [
-      { name: "React", icon: FaReact, color: "#61DAFB" },
-      { name: "Vue.js", icon: FaVuejs, color: "#4FC08D" },
-      { name: "Spring Boot", icon: SiSpringboot, color: "#6DB33F" }
+      { name: "React", icon: "⚛️" },
+      { name: "Vue.js", icon: "💚" },
+      { name: "Spring Boot", icon: "🍃" }
     ]
   },
   { 
     title: "Languages", 
     items: [
-      { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-      { name: "Python", icon: null, emoji: "🐍" }
+      { name: "TypeScript", icon: "🔷" },
+      { name: "Python", icon: "🐍" }
     ]
   },
   { 
     title: "Styling", 
     items: [
-      { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
-      { name: "Bootstrap", icon: FaBootstrap, color: "#7952B3" },
-      { name: "SCSS/SASS", icon: null, emoji: "🎨" }
+      { name: "Tailwind CSS", icon: "🎨" },
+      { name: "Bootstrap", icon: "⬜" },
+      { name: "SCSS/SASS", icon: "🎯" }
     ]
   },
   { 
     title: "Design Tools", 
     items: [
-      { name: "Figma", icon: FaFigma, color: "#F24E1E" },
-      { name: "Photoshop", icon: null, emoji: "📐" }
+      { name: "Figma", icon: "🎨" },
+      { name: "Photoshop", icon: "📐" }
     ]
   },
   { 
     title: "Project Management", 
     items: [
-      { name: "Notion", icon: FaNotion, color: "#FFFFFF" },
-      { name: "Jira", icon: FaJira, color: "#0052CC" },
-      { name: "Gantt", icon: null, emoji: "📊" },
-      { name: "Microsoft Suite", emoji: "📋" }
+      { name: "Notion", icon: "📝" },
+      { name: "Jira", icon: "⚙️" },
+      { name: "Gantt", icon: "📊" },
+      { name: "Microsoft Suite", icon: "📋" }
     ]
   },
   { 
     title: "DevOps", 
     items: [
-      { name: "Vercel", emoji: "⚪" },
-      { name: "GitHub Actions", emoji: "🔧" }
+      { name: "Vercel", icon: "⚡" },
+      { name: "GitHub Actions", icon: "🔧" }
     ]
   },
 ];
@@ -269,11 +257,7 @@ function Index() {
                   <div className="flex flex-wrap gap-6">
                     {category.items.map((item) => (
                       <div key={item.name} className="flex flex-col items-center gap-2 hover:scale-110 transition-transform" title={item.name}>
-                        {item.icon ? (
-                          <item.icon size={40} style={{ color: item.color }} />
-                        ) : (
-                          <span className="text-4xl">{item.emoji}</span>
-                        )}
+                        <span className="text-4xl">{item.icon}</span>
                         <span className="font-mono text-[10px] opacity-60 text-center">{item.name}</span>
                       </div>
                     ))}
