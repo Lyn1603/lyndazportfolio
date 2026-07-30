@@ -30,13 +30,21 @@ function About() {
 
         <div className="mt-16 space-y-6 text-lg leading-relaxed opacity-90">
           <p>
-            I'm <strong>Lynda Benabdessadok</strong>, 23 years old, freshly graduated from{" "}
-            <strong>IIM Digital School Paris</strong>. Junior project manager, passionate about
-            digital product management and meaningful user experiences.
+            I'm <strong>Lynda Benabdessadok</strong>, a Digital Project Manager
+            passionate about innovation, digital transformation and user-centered
+            experiences.
           </p>
+
           <p>
-            This portfolio started in 2022 as a pixel-art Y2K desktop — a small manifesto that
-            "tech is for cool kids". Right now, my aspiration grown further and i want to leave my own mark in this world.
+            Over the past few years, I've built a unique profile at the intersection of
+            technology and project management, contributing to web applications, product
+            initiatives and international digital projects.
+          </p>
+
+          <p>
+            Today, my ambition goes beyond building products. I want to help shape
+            meaningful digital experiences, connect people through technology, and
+            contribute to projects that create lasting impact.
           </p>
         </div>
 
@@ -50,12 +58,34 @@ function About() {
         </section>
 
         <section className="mt-24 border-t border-border-dim pt-12">
+          <h2 className="font-display text-4xl uppercase">Certifications</h2>
+          <div className="mt-6 flex items-center gap-6">
+            <a href="https://directory.opquast.com/fr/certificat/BZGDEW/" target="_blank" rel="noreferrer" className="transition-transform hover:scale-110">
+              <img 
+                src="https://api.opquast.com/badge/BZGDEW.svg"
+                alt="Lynda BENABDESSADOK - Certifié(e) Opquast"
+                width="150"
+                height="150"
+              />
+            </a>
+            <div>
+              <a href="https://directory.opquast.com/fr/certificat/BZGDEW/" target="_blank" rel="noreferrer" className="font-display text-xl uppercase text-star-bright underline decoration-accent-pink underline-offset-4 hover:text-accent-pink">
+                Opquast Certification
+              </a>
+              <p className="mt-2 font-mono text-xs uppercase tracking-widest opacity-60">
+                Quality Assurance Web Certification
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="mt-24 border-t border-border-dim pt-12">
           <h2 className="font-display text-4xl uppercase">Elsewhere</h2>
           <a
-            href="mailto:lylyben74@gmail.com"
+            href="mailto:lyndab.pro@gmail.com"
             className="mt-6 block font-display text-3xl lowercase text-star-bright underline decoration-accent-pink underline-offset-8 hover:text-accent-pink"
           >
-            lylyben74@gmail.com
+            lyndab.pro@gmail.com
           </a>
           <div className="mt-6 flex flex-wrap gap-4">
             <a href="https://github.com/Lyn1603/lyndazportfolio" target="_blank" rel="noreferrer" className="border border-star-bright px-6 py-3 font-display text-xl uppercase hover:bg-star-bright hover:text-indigo-night transition-all">GitHub</a>
