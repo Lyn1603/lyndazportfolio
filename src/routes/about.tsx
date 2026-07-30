@@ -30,13 +30,21 @@ function About() {
 
         <div className="mt-16 space-y-6 text-lg leading-relaxed opacity-90">
           <p>
-            I'm <strong>Lynda Benabdessadok</strong>, 23 years old, freshly graduated from{" "}
-            <strong>IIM Digital School Paris</strong>. Junior project manager, passionate about
-            digital product management and meaningful user experiences.
+            I'm <strong>Lynda Benabdessadok</strong>, a Digital Project Manager
+            passionate about innovation, digital transformation and user-centered
+            experiences.
           </p>
+
           <p>
-            This portfolio started in 2022 as a pixel-art Y2K desktop — a small manifesto that
-            "tech is for cool kids". Right now, my aspiration grown further and i want to leave my own mark in this world.
+            Over the past few years, I've built a unique profile at the intersection of
+            technology and project management, contributing to web applications, product
+            initiatives and international digital projects.
+          </p>
+
+          <p>
+            Today, my ambition goes beyond building products. I want to help shape
+            meaningful digital experiences, connect people through technology, and
+            contribute to projects that create lasting impact.
           </p>
         </div>
 

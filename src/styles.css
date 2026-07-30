@@ -59,3 +59,7 @@
     font-family: var(--font-body);
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
