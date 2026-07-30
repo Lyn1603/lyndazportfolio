@@ -353,11 +353,11 @@ function Index() {
                             href="mailto:lyndab.pro@gmail.com"
                             className="block font-display text-3xl lowercase text-star-bright underline decoration-accent-pink decoration-2 underline-offset-8 transition-colors hover:text-accent-pink sm:text-5xl"
                         >
-                            lyndab.pro@gmail.com
+                            lyndab.contact@gmail.com
                         </a>
                         <div className="flex flex-wrap justify-center gap-4 pt-4">
                             <a
-                                href="mailto:lyndab.pro@gmail.com"
+                                href="mailto:lyndab.contact@gmail.com"
                                 className="bg-accent-pink px-8 py-4 font-display text-2xl uppercase text-indigo-night transition-transform hover:scale-105"
                             >
                                 Email Me
