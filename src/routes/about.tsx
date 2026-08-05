@@ -18,7 +18,7 @@ function About() {
   return (
     <div className="starry-gradient min-h-screen font-body text-lavender-glow">
       <nav className="sticky top-0 z-50 flex items-center justify-between border-b border-border-dim px-6 py-4 backdrop-blur-md">
-        <Link to="/" className="font-display text-2xl uppercase tracking-tighter">Lyndazfolio v2.4</Link>
+        <Link to="/" className="font-display text-2xl uppercase tracking-tighter">Lyndazfolio v2.0</Link>
         <Link to="/" className="font-mono text-xs uppercase tracking-widest hover:text-accent-pink">← Back</Link>
       </nav>
 
@@ -88,8 +88,7 @@ function About() {
             lyndab.pro@gmail.com
           </a>
           <div className="mt-6 flex flex-wrap gap-4">
-            <a href="https://github.com/Lyn1603/lyndazportfolio" target="_blank" rel="noreferrer" className="border border-star-bright px-6 py-3 font-display text-xl uppercase hover:bg-star-bright hover:text-indigo-night transition-all">GitHub</a>
-            <a href="https://discord.gg/ku3YfnPW" target="_blank" rel="noreferrer" className="bg-accent-pink px-6 py-3 font-display text-xl uppercase text-indigo-night hover:scale-105 transition-transform">Discord</a>
+            <a href="https://github.com/Lyn1603" target="_blank" rel="noreferrer" className="border border-star-bright px-6 py-3 font-display text-xl uppercase hover:bg-star-bright hover:text-indigo-night transition-all">GitHub</a>
           </div>
         </section>
 

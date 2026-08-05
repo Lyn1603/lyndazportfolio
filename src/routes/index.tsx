@@ -370,21 +370,13 @@ function Index() {
                             >
                                 GitHub
                             </a>
-                            <a
-                                href="https://discord.gg/ku3YfnPW"
-                                target="_blank"
-                                rel="noreferrer"
-                                className="border border-border-dim px-8 py-4 font-display text-2xl uppercase transition-all hover:bg-star-bright hover:text-indigo-night"
-                            >
-                                Discord
-                            </a>
                         </div>
                     </div>
 
                     <div
                         className="flex w-full flex-col justify-between gap-4 pt-24 font-mono text-[10px] uppercase opacity-40 sm:flex-row">
-                        <span>© 2022–2026 Lynda Benabdessadok</span>
-                        <span>Paris, FR — IIM Digital School</span>
+                        <span>© 2021–2026 Lynda Benabdessadok</span>
+                        <span>Paris, France</span>
                         <Link to="/about" className="underline">About Me</Link>
                     </div>
                 </div>
